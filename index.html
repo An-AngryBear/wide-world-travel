@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Wide World Travel</title>
+		<link rel="stylesheet" type="text/css" href="#">
+	</head>
+	<body ng-app="app">
+
+		<div ng-controller="bookCtrl">
+			<ul>
+				<li ng-repeat="book in books">
+					{{book.type}} : {{book.title}}
+				</li>
+			</ul>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="./app/app.js"></script>
+		<script src="./app/factories/bookFactory.js"></script>
+		<script src="./app/controllers/bookCtrl.js"></script>
+	</body>
+</html>
