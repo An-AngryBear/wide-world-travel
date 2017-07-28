@@ -1,23 +1,25 @@
-<!DOCTYPE html>
 <html>
+<!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Wide World Travel</title>
-		<link rel="stylesheet" type="text/css" href="#">
+		<link rel="stylesheet" type="text/css" href="sass/main.sass">
 	</head>
 	<body ng-app="app">
 
-		<div ng-controller="bookCtrl">
-			<ul>
-				<li ng-repeat="book in books">
-					{{book.type}} : {{book.title}}
-				</li>
-			</ul>
+		<div ng-view>
+
 		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<!-- CDNs -->
+	  	<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+	  	<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+  		<!-- app -->
 		<script src="./app/app.js"></script>
+		<!-- providers -->
 		<script src="./app/factories/bookFactory.js"></script>
+		<!-- controllers -->
 		<script src="./app/controllers/bookCtrl.js"></script>
+		<script src="./app/controllers/opening.js"></script>
 	</body>
 </html>
