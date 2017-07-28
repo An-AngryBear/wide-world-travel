@@ -1,3 +1,5 @@
+'use strict';
+
 myApp.factory('BookFactory', function($q, $http) {
 	function getBooks() {
 		return $q( (resolve, reject) => {
